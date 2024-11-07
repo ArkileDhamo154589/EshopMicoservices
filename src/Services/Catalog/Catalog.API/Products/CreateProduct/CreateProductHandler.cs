@@ -10,7 +10,7 @@ public record CreateProductResult(Guid Id);
 internal class CreateProductCommandHandler 
     : ICommandHandler<CreateProductCommand, CreateProductResult>
 {
-    public Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
+    public async Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
     {
 
        
